@@ -18,7 +18,7 @@
     <scm>
         <connection>scm:git:git@github.com:lelik1979/tictactoe.git</connection>
         <developerConnection>scm:git:git@github.com:lelik1979/tictactoe.git</developerConnection>
-        <tag>release_1.0</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/lelik1979/tictactoe.git</url>
     </scm>
 
