@@ -4,7 +4,7 @@
 
     <groupId>com.home</groupId>
     <artifactId>tictactoe</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>TicTacToe game server</name>
 
     <properties>
@@ -18,7 +18,7 @@
     <scm>
         <connection>scm:git:git@github.com:lelik1979/tictactoe.git</connection>
         <developerConnection>scm:git:git@github.com:lelik1979/tictactoe.git</developerConnection>
-        <tag>tictactoe-0.0.3</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/lelik1979/tictactoe.git</url>
     </scm>
 
