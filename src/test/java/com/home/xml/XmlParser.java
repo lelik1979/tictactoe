@@ -3,21 +3,20 @@ package com.home.xml;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.events.XMLEvent;
-import java.io.FileInputStream;
+import java.io.InputStream;
 
 public class XmlParser {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(XmlParser.class);
 
-    public boolean parse(String file1, String file2) {
+    public boolean parse(InputStream inputStream1, String file2) {
         XMLInputFactory xmlInputFactory = XMLInputFactory.newInstance();
         try {
-            XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(new FileInputStream(file1));
+            XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(inputStream1);
             String currentPath = "";
             while (xmlEventReader.hasNext()) {
                 XMLEvent event = xmlEventReader.nextEvent();
